@@ -1,9 +1,10 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
-import { navLinks, clubInfo } from '@/lib/data';
+import { navLinks } from '@/lib/data';
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -13,12 +14,18 @@ export default function Navbar() {
     <nav className="border-b border-neutral-200 bg-white sticky top-0 z-50">
       <div className="max-w-wide mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          {/* Logo / Club Name */}
-          <Link
-            href="/"
-            className="font-display text-lg text-neutral-900 hover:text-accent-600 transition-colors"
-          >
-            {clubInfo.name}
+          {/* Logo */}
+          <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+            <Image
+              src="/photos/logo.png"
+              alt="Davidson Entrepreneurship Club"
+              width={40}
+              height={40}
+              className="h-10 w-auto"
+            />
+            <span className="hidden sm:block font-medium text-neutral-800 text-sm">
+              Davidson Entrepreneurship Club
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
