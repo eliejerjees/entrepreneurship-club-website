@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-neutral-800 antialiased;
+  }
+
+  /* Better focus styles */
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-accent-500;
+  }
+
+  /* Remove default link underlines, we'll add them explicitly */
+  a {
+    @apply no-underline;
+  }
+}
+
+/* Component utilities */
+@layer components {
+  /* Consistent container */
+  .container-narrow {
+    @apply max-w-4xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .container-wide {
+    @apply max-w-wide mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Text link style */
+  .text-link {
+    @apply text-accent-600 hover:text-accent-700 underline underline-offset-2 transition-colors;
+  }
+
+  /* Subtle divider */
+  .divider {
+    @apply border-t border-neutral-200;
+  }
+}
+
+/* Utility additions */
+@layer utilities {
+  /* Hide scrollbar but allow scrolling */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}

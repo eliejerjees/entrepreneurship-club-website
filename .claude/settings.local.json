@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd /Users/eliejerjees/Desktop/Personal\\\\ Projects/Entrepreneurship\\\\ Club\\\\ Website:*)",
+      "Bash(cd:*)",
+      "Bash(cd /Users/eliejerjees/Desktop/Personal\\\\ Projects/Entrepreneurship\\\\ Club\\\\ Website && npm install:*)",
+      "Bash(npm install tailwindcss@3.4.0 --save-dev)",
+      "Bash(curl:*)"
+    ]
+  }
+}
