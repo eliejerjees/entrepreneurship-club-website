@@ -41,7 +41,7 @@ export default function HomePage() {
           <Card>
             <h3 className="font-medium text-neutral-900 mb-1">Open to everyone</h3>
             <p className="text-sm text-neutral-600">
-              All majors, all experience levels. No application required—just show up.
+              All majors, all experience levels. No application required just show up.
             </p>
           </Card>
           <Card>
